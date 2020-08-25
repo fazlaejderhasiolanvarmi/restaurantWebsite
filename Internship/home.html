@@ -1,0 +1,192 @@
+<html>
+<title>Anadolu Tat 1071 Restaurant</title>
+<head>
+<script src="https://kit.fontawesome.com/e729c4760c.js" crossorigin="anonymous"></script>
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a, .dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.active {
+  background-color: #000000;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+	font-family: "Lato", sans-serif;
+	padding: 10px;
+	background: #4f525d;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+  text-align: center;
+  border-radius: 15px;
+}
+
+.img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.img:hover{
+	opacity: 0.8;
+}
+
+.column{
+	float: left;
+	width: 100%;
+}
+
+.leftcolumn{
+	float: left;
+	width: 75%;
+}
+
+.rightcolumn{
+	float: left;
+	width: 25%;
+	padding-left: 20px;
+}
+
+.checked {
+  color: orange;
+}
+
+.fab {
+  padding: 5px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.fab:hover {
+  opacity: 0.7;
+}
+
+</style>
+</head>
+<body>
+
+<ul>
+  <li><a class="active" href="#"><i class="fas fa-store-alt"></i> Home</a></li>
+  <li class="dropdown">
+    <a href="menu.html" class="dropbtn"><i class="fas fa-utensils"></i> Menu   <i class="fas fa-chevron-down"></i></a>
+    <div class="dropdown-content">
+      <a href="breakfast.html">Breakfast</a>
+      <a href="lunch.html">Lunch</a>
+      <a href="dinner.html">Dinner</a>
+	  <a href="snacks.html">Snacks</a>
+	  <a href="drinks.html">Drinks</a>
+    </div>
+  </li>
+  <li><a href="reservation.html"><i class="fas fa-clipboard-list"></i> Reservation</a></li>
+  <li><a href="comments.html"><i class="fas fa-comments"></i> Comments</a></li>
+  <li style="float:right"><a href="about.html">About Us</a></li>
+</ul>
+
+<div class="row">
+	<div class="leftcolumn">
+      <div class="card">
+      <h1>Anadolu Tat 1071 Restaurant</h1>
+      <h3>Where taste meets the myth.</h3>
+      <div class="img">
+	  <img src="restaurant.png" alt="Our Restaurant" style="width:100%"></div>
+      
+	  <p>Anadolu Tat 1071 brings you together with taste at the historical Haydarpaşa Station, where Asia and Europe meet brotherly in Kadıköy, the jewel of Istanbul. It’s the ultimate escape – the perfect spot to enjoy sensational food that showcases everything the region has to offer in a single, sophisticated setting.</p>	  
+	  </div>
+	</div>
+	<div class="rightcolumn">
+		<div class="card">
+			<h2>First Time?</h2>
+			<h3>10% OFF</h3>
+			<p>You can try our foods with discount on your first trip to our restaurant.</p>
+			<p>Use Promo Code: TAT1071</p>
+		</div>
+		<div class="card">
+			<h3>Our Rating</h3>
+			<span class="fa fa-star checked"></span>
+			<span class="fa fa-star checked"></span>
+			<span class="fa fa-star checked"></span>
+			<span class="fa fa-star checked"></span>
+			<span class="fa fa-star"></span>
+			<p>4.6 average based on 574 reviews.</p>
+		</div>
+		<div class="card">
+			<h2>Find us on social media!</h2>
+			<a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-square"></a></i>
+			<a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></a></i>
+			<a href="https://www.snapchat.com/" target="_blank"><i class="fab fa-snapchat-square"></a></i>
+			<a href="https://www.pinterest.com/" target="_blank"><i class="fab fa-pinterest-square"></a></i>
+			<a href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter-square"></a></i>
+			<a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube-square"></a></i>
+		</div>
+		
+		<div class="card">
+			<h6>© 2020 Burak Çeltik.  All rights reserved.</h6>
+		</div>
+	</div>
+</div>	
+
+</body>
+</html>

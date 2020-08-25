@@ -1,0 +1,346 @@
+<html>
+<title>Anadolu Tat 1071 Restaurant</title>
+<head>
+<script src="https://kit.fontawesome.com/e729c4760c.js" crossorigin="anonymous"></script>
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a, .dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.active {
+  background-color: #000000;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+	font-family: "Lato", sans-serif;
+	padding: 10px;
+	background: #4f525d;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column{
+	float: left;
+	padding: 10px;
+}
+
+.column.side{
+	width: 10%;
+}
+
+.column.middle{
+	width: 80%;
+}
+
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+  text-align: center;
+  border-radius: 15px;
+}
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #333;
+  border-radius: 15px;
+}
+
+.tab button {
+  background-color: inherit;
+  float: center;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  color: white;
+  border-radius: 15px;
+}
+
+.tab button:hover {
+  background-color: red;
+}
+
+.tab button.active {
+  background-color: #000;
+}
+
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+  border-radius: 15px;
+  animation: fadeEffect 1s;
+}
+
+@keyframes fadeEffect{
+	from {opacity: 0;}
+	to {opacity: 1;}
+}
+
+</style>
+</head>
+<body>
+
+<ul>
+  <li><a href="home.html"><i class="fas fa-store-alt"></i> Home</a></li>
+  <li class="dropdown">
+    <a class="active" href="menu.html" class="dropbtn"><i class="fas fa-utensils"></i> Menu   <i class="fas fa-chevron-down"></i></a>
+    <div class="dropdown-content">
+      <a href="breakfast.html">Breakfast</a>
+      <a href="lunch.html">Lunch</a>
+      <a href="dinner.html">Dinner</a>
+	  <a href="snacks.html">Snacks</a>
+	  <a href="drinks.html">Drinks</a>
+    </div>
+  </li>
+  <li><a href="reservation.html"><i class="fas fa-clipboard-list"></i> Reservation</a></li>
+  <li><a href="comments.html"><i class="fas fa-comments"></i> Comments</a></li>
+  <li style="float:right"><a href="about.html">About Us</a></li>
+</ul>
+
+<div class="row">
+	<div class="column side">
+	</div>
+	
+	<div class="column middle">
+		<div class="card">
+			<div class="tab">
+				<button class="tablinks" style="width:16%" onclick="openMenu(event, 'Breakfast')" id="defaultOpen">Breakfast</button>
+				<button class="tablinks" style="width:16%" onclick="openMenu(event, 'Lunch')">Lunch</button>
+				<button class="tablinks" style="width:16%" onclick="openMenu(event, 'Dinner')">Dinner</button>
+				<button class="tablinks" style="width:16%" onclick="openMenu(event, 'Snacks')">Snacks</button>
+				<button class="tablinks" style="width:16%" onclick="openMenu(event, 'Drinks')">Drinks</button>
+			</div>
+
+			<div id="Breakfast" class="tabcontent">
+				<h4>Egg Wraps</h4>
+				<p>These low-carb, high-protein wraps can be filled with turkey, avocado, hummus.</p><br>
+			
+				<h4>Smoky Red Pepper Crispy Egg Toast</h4>
+				<p>Paprika and roasted red pepper hummus make this egg toast a real morning kicker.</p><br>
+			
+				<h4>Flower Power Sunny-Side Eggs</h4>
+				<p>When you just want a sunny-side egg but want them to be cute.</p><br>
+				
+				<h4>Mini Sesame Zucchini Loaves</h4>
+				<p>These mini loaves are packed with greens, which means you'll get one serving out of the way before the day gets going.</p><br>
+				
+				<h4>Pancakes</h4>
+				<p>Someone who eats pancakes and jam can't be so awfully dangerous. You can talk to him.</p><br>
+				
+				<h4>Breakfast Burritos with Chorizo</h4>
+				<p>Filling and flavorful, this breakfast burrito is packed with chorizo, eggs, hash browns and beans. When paired with a fiery tomatillo salsa, the grab-and-go breakfast is simply amazing.</p><br>
+				
+				<h4>Jalapeño Popper Bagels</h4>
+				<p>Sure, a toasted bagel with cream cheese is great. But a bagel topped with loaded Jalapeño Popper cream cheese and baked? Yummy.</p><br>
+				
+				<h4>Philly Cheesesteak Omelet</h4>
+				<p> This is the ultimate low-carb way to guiltlessly enjoy your favorite sandwich at breakfast.</p><br>
+				
+				<h4>Mimosa Fruit Salad</h4>
+				<p>Your next brunch needs this fruit salad.</p><br>
+			</div>
+
+			<div id="Lunch" class="tabcontent">
+				<h4>Mediterranean Cod</h4>
+				<p> Tender, perfectly cooked Cod, moist and delicious with Mediterranean Flavours.</p><br>
+				
+				<h4>Grilled Chicken Sliders</h4>
+				<p>If a big ol' burger is too much for you to handle between meetings, munch on these smaller — yet filling — sliders, garnished with radishes and cucumbers.</p><br>
+				
+				<h4>Grilled Steak Tortilla Salad</h4>
+				<p>Sure, tacos are filling and delicious but they aren't always healthy. A taco salad, however, is a safer bet.</p><br>
+				
+				<h4>Chickpea Chicken</h4>
+				<p>We bet when you order this spicy five-ingredient dish, your coworkers will ask what you're eating. See for yourself.</p><br>
+				
+				<h4>Summer Pesto Pasta</h4>
+				<p>Loaded with corn, squash, zucchini, and peppers, this pasta dish brings lots of healthy flavors to your lunch.</p><br>
+				
+				<h4>Roasted Mushroom Parmesan Sandwich</h4>
+				<p>This hearty sub, with mushrooms and lots of melty cheese, is the perfect thing for when you're craving some comfort food for lunch.</p><br>
+				
+				<h4>Prosciutto-Melon Panini</h4>
+				<p>Meet the MVP of sandwiches — layers of fresh arugula, salty prosciutto, melty cheese and sweet, homemade jam between crispy baguette slices.</p><br>
+				
+				<h4>Summer Tuna Salad With Sweet Potato and Basil</h4>
+				<p>Discover a salad you won't want to share with anybody.</p><br>
+				
+				<h4>Sesame Chicken Stir-Fry</h4>
+				<p>We're seriously addicted to the sriracha honey sauce that's generously drizzled all over chicken and bell peppers in this recipe.</p><br>
+			</div>
+
+			<div id="Dinner" class="tabcontent">
+				<h4>Tex-Mex Meatballs</h4>
+				<p>Add 'em to hero rolls or eat them over rice for a full meal.</p><br>
+				
+				<h4>Classic Calzones</h4>
+				<p>Pizza doesn't deserve ALL the hype. Justice for calzones (especially this one!)</p><br>
+				
+				<h4>Creamy Tuscan Chicken</h4>
+				<p>Way cheaper than a trip to Italy.</p><br>
+				
+				<h4>Honey Mustard Pretzel Chicken</h4>
+				<p>The chicken nuggets you didn't know you needed.</p><br>
+				
+				<h4>Shepherd's Pie</h4>
+				<p>When you're in the mood for a meaty, savory comfort-food classic.</p><br>
+				
+				<h4>Spaghetti and Meatballs</h4>
+				<p>Comes with a meatball that rivals that of your favorite Italian restaurant!</p><br>
+				
+				<h4>Classic Stuffed Peppers</h4>
+				<p>Rice, ground beef, and cheese never tasted so good.</p><br>
+				
+				<h4>Creamy Chicken and Mushroom Soup</h4>
+				<p> This creamy chicken mushroom soup is made with vegetables, mushrooms, chicken stock, and seasonings.</p><br>
+				
+				<h4>Italian Chicken Skewers</h4>
+				<p>Face it, food is just more fun on a stick.</p><br>
+			</div>
+			
+			<div id="Snacks" class="tabcontent">
+				<h4>Chicken Wings</h4>
+				<p>Even chickens recommend us.</p><br>
+				
+				<h4>French Fries</h4>
+				<p>Keep your friends close and your fries closer.</p><br>
+				
+				<h4>Mozzarella Sticks</h4>
+				<p>Say cheese every day.</p><br>
+				
+				<h4>Onion Rings</h4>
+				<p>Melts in your mouth.</p><br>
+				
+				<h4>Hot Dogs</h4>
+				<p>A taste that you will never forget.</p><br>
+				
+				<h4>Poutine</h4>
+				<p>Fries, gravy and cheese. Do we need to say more?</p><br>
+			</div>
+			
+			<div id="Drinks" class="tabcontent">
+				<h4>Drinks</h4>
+				<p></p><br>
+				
+				<h4>Drinks</h4>
+				<p></p><br>
+				
+				<h4>Drinks</h4>
+				<p></p><br>
+				
+				<h4>Drinks</h4>
+				<p></p><br>
+				
+				<h4>Drinks</h4>
+				<p></p><br>
+				
+				<h4>Drinks</h4>
+				<p></p><br>
+				
+				<h4>Drinks</h4>
+				<p></p><br>
+				
+				<h4>Drinks</h4>
+				<p></p><br>
+				
+				<h4>Drinks</h4>
+				<p></p><br>
+				
+				<h4>Drinks</h4>
+				<p></p><br>
+				
+				<h4>Drinks</h4>
+				<p></p><br>
+				
+				<h4>Drinks</h4>
+				<p></p><br>
+			</div>
+			
+			<h5>You can see the pictures of foods served in their individual tabs.</h5>
+		</div>
+	</div>
+	
+	<div class="column side">
+	</div>
+</div>
+
+<script>
+document.getElementById("defaultOpen").click();
+
+function openMenu(evt, menuName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,239 @@
+<html>
+<title>Anadolu Tat 1071 Restaurant</title>
+<head>
+<script src="https://kit.fontawesome.com/e729c4760c.js" crossorigin="anonymous"></script>
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a, .dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.active {
+  background-color: #000000;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+	font-family: "Lato", sans-serif;
+	padding: 10px;
+	background: #4f525d;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+  text-align: center;
+  border-radius: 15px;
+}
+
+.column{
+	float: left;
+	padding: 10px;
+}
+
+.column.side{
+	width: 15%;
+}
+
+.column.middle{
+	width: 70%;
+}
+
+.col{
+	float: left;
+	width: 20%;
+	padding: 0 5px;
+}
+
+.sectioncard{
+	padding: 20px;
+	text-align: center;
+	margin-top: 20px;
+	background-color: #444;
+	color: white;
+	border-radius: 15px;
+}
+
+.fa-smile-o, .fa-coffee{
+	font-size: 50px;
+}
+
+input[type=text], select, textarea {
+  width: 50%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+}
+
+input[type=email], select, textarea {
+  width: 50%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+}
+
+input[type=submit] {
+  background-color: #000000;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 50%;
+}
+
+input[type=submit]:hover {
+  opacity: 0.7;
+}
+
+</style>
+</head>
+<body>
+
+<ul>
+  <li><a href="home.html"><i class="fas fa-store-alt"></i> Home</a></li>
+  <li class="dropdown">
+    <a href="menu.html" class="dropbtn"><i class="fas fa-utensils"></i> Menu   <i class="fas fa-chevron-down"></i></a>
+    <div class="dropdown-content">
+      <a href="breakfast.html">Breakfast</a>
+      <a href="lunch.html">Lunch</a>
+      <a href="dinner.html">Dinner</a>
+	  <a href="snacks.html">Snacks</a>
+	  <a href="drinks.html">Drinks</a>
+    </div>
+  </li>
+  <li><a href="reservation.html"><i class="fas fa-clipboard-list"></i> Reservation</a></li>
+  <li><a href="comments.html"><i class="fas fa-comments"></i> Comments</a></li>
+  <li style="float:right"><a class="active" href="#">About Us</a></li>
+</ul>
+
+<div class="row">
+	<div class="column side">
+	</div>
+	
+	<div class="column side">
+	</div>
+	
+	<div class="col">
+		<div class="sectioncard">
+			<p><i class="fa fa-smile-o"></i></p>
+			<h3>1,000+</h3>
+			<p>Happy Clients</p>
+		</div>
+	</div>
+	
+	<div class="col">
+		<div class="sectioncard">
+			<p><i class="fa fa-coffee"></i></p>
+			<h3>1,000+</h3>
+			<p>Meetings</p>
+		</div>
+	</div>
+	
+	<div class="column side">
+	</div>
+	
+	<div class="column side">
+	</div>
+</div>
+
+<div class="row">
+	<div class="column side">
+	</div>
+	<div class="column middle">
+		<div class="card">
+			
+			<h2>CONTACT US</h2>
+			<i class="fa fa-map-marker"style="width:30px"></i> Kadıköy, İstanbul, TR<br>
+			<i class="fa fa-phone" style="width:30px"></i> Phone: 0 (212) 255 55 55<br>
+			<i class="fa fa-envelope" style="width:30px"> </i> Email: mail@mail.com<br>
+			
+			<h2>Opening Hours</h2>
+			<h4>Monday: 10:00 - 23:00</h4>
+			<h4>Tuesday: 10:00 - 23:00</h4>
+			<h4>Wednesday: 10:00 - 23:00</h4>
+			<h4>Thursday: 10:00 - 23:00</h4>
+			<h4>Friday: 10:00 - 23:00</h4>
+			<h4>Saturday: 10:00 - 23:00</h4>
+			<h4>Sunday: 10:00 - 23:00</h4><br>
+			
+			<h2>Have a question?</h2>
+			
+			<form action="http://localhost/contact.php" method="POST" target="_blank">
+				<input type="text" placeholder="Name" required name="name"><br>
+				<input type="email" placeholder="Email" required name="mail"><br>
+				<input type="text" placeholder="Message" required name="message"><br><br>
+				
+				<input type="submit">
+			</form>
+			
+		</div>
+	</div>
+	<div class="column side">
+	</div>
+</div>
+
+</body>
+</html>

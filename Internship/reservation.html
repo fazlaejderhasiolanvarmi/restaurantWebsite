@@ -1,0 +1,305 @@
+<html>
+<title>Anadolu Tat 1071 Restaurant</title>
+<head>
+<script src="https://kit.fontawesome.com/e729c4760c.js" crossorigin="anonymous"></script>
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a, .dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.active {
+  background-color: #000000;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+	font-family: "Lato", sans-serif;
+	padding: 10px;
+	background: #4f525d;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column{
+	float: left;
+	padding: 10px;
+}
+
+.column.side{
+	width: 10%;
+}
+
+.column.middle{
+	width: 80%;
+}
+
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+  text-align: center;
+  border-radius: 15px;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+}
+
+input[type=datetime-local], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+}
+
+input[type=tel], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+}
+
+input[type=number], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+}
+
+
+input[type=submit] {
+  background-color: #000000;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 30%;
+}
+
+
+input[type=submit]:hover {
+  opacity: 0.7;
+}
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #333;
+  border-radius: 15px;
+}
+
+.tab button {
+  background-color: inherit;
+  float: center;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  color: white;
+  border-radius: 15px;
+}
+
+.tab button:hover {
+  background-color: red;
+}
+
+.tab button.active {
+  background-color: #000;
+}
+
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+  border-radius: 15px;
+  animation: fadeEffect 1s;
+}
+
+@keyframes fadeEffect{
+	from {opacity: 0;}
+	to {opacity: 1;}
+}
+
+</style>
+</head>
+<body>
+
+<ul>
+  <li><a href="home.html"><i class="fas fa-store-alt"></i> Home</a></li>
+  <li class="dropdown">
+    <a href="menu.html" class="dropbtn"><i class="fas fa-utensils"></i> Menu   <i class="fas fa-chevron-down"></i></a>
+    <div class="dropdown-content">
+      <a href="breakfast.html">Breakfast</a>
+      <a href="lunch.html">Lunch</a>
+      <a href="dinner.html">Dinner</a>
+	  <a href="snacks.html">Snacks</a>
+	  <a href="drinks.html">Drinks</a>
+    </div>
+  </li>
+  <li><a class="active" href="#"><i class="fas fa-clipboard-list"></i> Reservation</a></li>
+  <li><a href="comments.html"><i class="fas fa-comments"></i> Comments</a></li>
+  <li style="float:right"><a href="about.html">About Us</a></li>
+</ul>
+
+<div class="row">
+	<div class="column side">
+	</div>
+	
+	<div class="column middle">
+		<div class="card">
+			<h4>For reservation, you can fill this form, and we will call you 24 hours before your reservation for confirmation.</h4>
+			<h5>We offer full-service catering for any event, large or small. You can directly contact us for more information.</h5>
+			<form action="http://localhost/reservation.php" method="POST" target="_blank">
+				
+				<p><input type="text" name="name" placeholder="Your name?" required></p>
+				<p><input type="tel" name="phone" placeholder="Your number? (Do not write 0 at front)" pattern="[0-9]{10}" required></p>
+				<p><input type="number" name="people" placeholder="How many people?"  min="1" max="30" required></p>
+				<p><input type="datetime-local" name="date" placeholder="Date and Time" value="2020-08-16T12:00" required></p>
+				<p><input type="text" name="message" placeholder="Message/Requirements"></p>
+				
+				<input type="submit">
+			</form>
+			
+			<h6>*If you can not come, please inform us at least 6 hours before your reservation.</h6>
+		</div>
+	</div>
+	
+	<div class="column side">
+	</div>
+</div>
+
+<div class="row">
+	<div class="column side">
+	</div>
+	
+	<div class="column middle">
+		<div class="card">
+			<h2>Any problems with your reservation?</h2>
+			
+			<div class="tab">
+				<button class="tablinks" style="width:40%" onclick="openMenu(event, 'Update')">Update your reservation</button>
+				<button class="tablinks" style="width:40%" onclick="openMenu(event, 'Delete')">Delete your reservation</button>
+			</div>
+			<div id="Update" class="tabcontent">
+				<form action="http://localhost/update_reservation.php" method="POST" target="_blank">
+				
+				<p><input type="text" name="name" placeholder="Your name?" required></p>
+				<p><input type="tel" name="phone" placeholder="Your number? (Do not write 0 at front)" pattern="[0-9]{10}" required></p>
+				<p><input type="number" name="people" placeholder="How many people?"  min="1" max="30" required></p>
+				<h4>Your old date of reservation:</h4>
+				<p><input type="datetime-local" name="olddate" placeholder="Date and Time" value="2020-08-16T12:00" required></p>
+				<h4>Your new date of reservation:</h4>
+				<p><input type="datetime-local" name="newdate" placeholder="Date and Time" value="2020-08-16T12:00" required></p>
+				<p><input type="text" name="message" placeholder="Message/Requirements"></p>
+				
+				<input type="submit">
+			</form>
+			</div>
+			
+			<div id="Delete" class="tabcontent">
+				<form action="http://localhost/delete_reservation.php" method="POST" target="_blank">
+				
+				<p><input type="text" name="name" placeholder="Your name?" required></p>
+				<p><input type="tel" name="phone" placeholder="Your number? (Do not write 0 at front)" pattern="[0-9]{10}" required></p>
+				<p><input type="datetime-local" name="date" placeholder="Date and Time" value="2020-08-16T12:00" required></p>
+				
+				<input type="submit">
+			</form>
+			</div>
+		</div>
+	</div>
+	
+	<div class="column side">
+	</div>
+</div>
+
+<script>
+function openMenu(evt, menuName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
+
+</body>
+</html>
